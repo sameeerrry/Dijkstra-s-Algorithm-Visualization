@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.controls {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.info {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+}
+
+.info p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.visualization-container {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    height: 600px;
+}
+
+#canvas {
+    width: 800px;
+    height: 100%;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+.table-container {
+    flex: 1;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+    overflow-x: auto;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.table-container h2 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+#algorithmTable {
+    width: 100%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    padding: 8px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.current-node {
+    background-color: #2196F3;
+    color: white;
+}
+
+.visited-node {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.path-node {
+    background-color: #FFD700;
+    color: black;
+}
+
+.maintenance-node {
+    background-color: #f44336;
+    color: white;
+}
+
+.infinity {
+    color: #999;
+}
+
+.tunnel-cost {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-size: 12px;
+    pointer-events: all;
+    cursor: pointer;
+} 

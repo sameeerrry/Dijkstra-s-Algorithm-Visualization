@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dijkstra's Algorithm Visualization</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Dijkstra's Algorithm Visualization</h1>
+        <div class="controls">
+            <button id="start">Start Visualization</button>
+            <button id="reset">Reset</button>
+            <div class="info">
+                <p>Click on the canvas to create nodes. Click and drag between nodes to create edges.</p>
+                <p>Right-click on a node to set it as the start node.</p>
+                <p>Right-click on another node to set it as the end node.</p>
+                <p>Click on edge weights to change them.</p>
+            </div>
+        </div>
+        <div class="visualization-container">
+            <canvas id="canvas"></canvas>
+            <div class="table-container">
+                <h2>Dijkstra's Algorithm Table</h2>
+                <div id="algorithmTable"></div>
+            </div>
+        </div>
+    </div>
+    <script src="dijkstra.js"></script>
+</body>
+</html> 
